@@ -1,6 +1,10 @@
 ---
 ---
 
+<title>{{ page.url.params.title }}</title>
+
+<h1>{{ page.url.params.title }}</h1>
+
 <ul>
   {% for test in site.data.tests %}
   <li>{{ test.id }}: {{ test.name }}</li>
