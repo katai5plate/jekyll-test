@@ -4,7 +4,10 @@
 {% capture query_string %}{{ page.url | split: '?' | last }}{% endcapture %}
 {% assign query_params = query_string | split: '&' %}
 
-{{ query_string }}
+<pre>
+page.url: {{ page.url }}
+query_string: {{ query_string }}
+</pre>
 
 {% for param in query_params %}
   {% assign pair = param | split: '=' %}
