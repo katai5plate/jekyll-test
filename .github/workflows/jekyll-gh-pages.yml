@@ -4,6 +4,8 @@ name: pages build and deployment (custom)
 on:
   # デフォルトブランチを対象としたプッシュで実行する
   push:
+    paths:
+      - 'dist/**'
     branches: ["main"]
 
   # Actions タブから、このワークフローを手動で実行できるようにします。
